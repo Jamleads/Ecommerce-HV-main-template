@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="/assets/chair-product.svg"
+      type="image/x-icon"
+    />
+    <title>Home</title>
+  </head>
+
+  <body>
+    <nav class="nav w-full fixed top-0 left-0 right-0">
+      <div class="nav-contact w-full bg-purpple py-2">
+        <div
+          class="nav-contact-wrap lg:w-[70%] mx-auto flex items-center justify-between"
+        >
+          <div class="lg:flex items-center gap-3">
+            <a
+              href="mailto:ogunyemiadetunji17@gmail.com?subject=Frontend Development"
+              target="_blank"
+            >
+              <div class="email flex items-center">
+                <img src="/assets/email-icon.svg" alt="email-icon" />
+                <p class="ml-2 text-base text-offWhite">
+                  ogunyemiaetunji17@gmail.com
+                </p>
+              </div>
+            </a>
+
+            <a href="tel:+2349067942127" target="_blank">
+              <div class="phone flex items-center">
+                <img src="/assets/phone-icon.svg" alt="phone-icon" />
+                <p class="ml-2 text-base text-offWhite">(+234) 9067942127</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="lg:flex items-center gap-3">
+            <div class="languages-wrap">
+              <select
+                name="languages"
+                id="langueges"
+                class="bg-transparent text-offWhite text-base"
+              >
+                <option value="eng">English</option>
+              </select>
+            </div>
+
+            <div class="currency-wrap">
+              <select
+                name="currency"
+                id="currency"
+                class="bg-transparent text-offWhite text-base"
+              >
+                <option value="usd">USD</option>
+              </select>
+            </div>
+
+            <div class="favourites flex items-center">
+              <p class="text-offWhite text-base">Wishlist</p>
+              <img
+                src="/assets/favourite-icon.svg"
+                alt="favourites-Icon"
+                class="lg:ml-2"
+              />
+            </div>
+
+            <div class="cart-wrap flex items-center">
+              <p class="text-offWhite text-base">Cart</p>
+              <div
+                class="relative h-full w-[30px] flex items-center justify-center"
+              >
+                <p
+                  class="absolute -top-2 right-0 px-1 ml-2 text-pink text-xs bg-[#2F1AC4] font-bold"
+                >
+                  <!-- {!cartProducts.length >= 1 ? "" : cartProducts.length} -->
+                </p>
+                <img src="/assets/cart-icon.svg" alt="cart-icon" class="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
