@@ -10,6 +10,11 @@
       type="image/x-icon"
     />
     <title>Home</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
@@ -137,6 +142,139 @@
       </div>
     </nav>
 
-    <div class="slick carousel bg-[#F2F0FF]"></div>
+    <section class="swiper-section mt-[125px]">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide carousel1 collection-card w-full relative">
+            <img
+              src="../assets/carousel-add.svg"
+              alt=""
+              class="carouel-add-img absolute top-0 left-0"
+            />
+
+            <div
+              class="collection-wrap lg:w-[80%] flex items-center lg:gap-5 lg:mx-auto lg:h-[65vh]"
+            >
+              <div class="collection-details lg:w-[36%] ml-auto text-left">
+                <p class="collection-sub-title text-xs text-pink font-bold">
+                  Best Furniture For Your Castle....
+                </p>
+
+                <h1 class="collection-title font-bold lg:text-4xl mt-2">
+                  New <span>Furniture</span> Collection Trends in 2023
+                </h1>
+
+                <p
+                  class="collection-decription text-xs text-[#8A8FB9] lg:my-5 lg:w-[80%]"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna
+                  in est adipiscing in phasellus non in justo.
+                </p>
+
+                <button></button>
+
+                <button
+                  class="px-8 py-3 bg-pink text-mainWhite"
+                  onClick="{onClick}"
+                >
+                  Shop Now
+                </button>
+              </div>
+
+              <div class="collection-image-wrap lg:w-[50%] relative">
+                <div class="collection-image flex items-center justify-center">
+                  <img
+                    src="../assets/chair-product2.svg"
+                    alt="collection of Prouct"
+                    class="w-[500px]"
+                  />
+                </div>
+
+                <div
+                  class="colection-bolb absolute bottom-0 left-4 w-[480px] h-[480px] bg-[#ecd2fa59] mix-blend-multiply rounded-full"
+                ></div>
+                <div
+                  class="colection-bolb absolute top-0 right-12 w-[480px] h-[480px] bg-[#ecd2fa59] mix-blend-multiply rounded-full"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide carousel2 collection-card w-full relative">
+            <img
+              src="../assets/carousel-add.svg"
+              alt=""
+              class="carouel-add-img absolute top-0 left-0"
+            />
+
+            <div
+              class="collection-wrap lg:w-[80%] flex items-center lg:gap-5 lg:mx-auto lg:h-[65vh]"
+            >
+              <div class="collection-details lg:w-[36%] ml-auto text-left">
+                <p class="collection-sub-title text-xs text-pink font-bold">
+                  Best Furniture For Your Castle....
+                </p>
+
+                <h1 class="collection-title font-bold lg:text-4xl mt-2">
+                  New <span>Furniture</span> Collection Trends in 2023
+                </h1>
+
+                <p
+                  class="collection-decription text-xs text-[#8A8FB9] lg:my-5 lg:w-[80%]"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna
+                  in est adipiscing in phasellus non in justo.
+                </p>
+
+                <button></button>
+
+                <button
+                  class="px-8 py-3 bg-pink text-mainWhite"
+                  onClick="{onClick}"
+                >
+                  Shop Now
+                </button>
+              </div>
+
+              <div class="collection-image-wrap lg:w-[50%] relative">
+                <div class="collection-image flex items-center justify-center">
+                  <img
+                    src="../assets/chair-product.svg"
+                    alt="collection of Prouct"
+                    class="w-[500px]"
+                  />
+                </div>
+
+                <div
+                  class="colection-bolb absolute bottom-0 left-4 w-[480px] h-[480px] bg-[#ecd2fa59] mix-blend-multiply rounded-full"
+                ></div>
+                <div
+                  class="colection-bolb absolute top-0 right-12 w-[480px] h-[480px] bg-[#ecd2fa59] mix-blend-multiply rounded-full"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
   </body>
+
+  <!-- Main project script -->
+  <script src="script.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </html>

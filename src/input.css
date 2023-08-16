@@ -13,19 +13,18 @@ select:focus {
   outline: none; }
 
 .nav {
-  z-index: 1; }
+  z-index: 2; }
   .nav ul li:hover {
     color: #fb2e86;
     transition: ease-in-out 0.2s; }
 
-.collectionCard h1 {
-  line-height: 50px;
-  letter-spacing: 1px; }
+.collection-card h1 {
+  line-height: 50px; }
 
-.collectionCard .colection-bolb {
+.collection-card .colection-bolb {
   z-index: -1; }
 
-.collectionCard .collection-image {
+.collection-card .collection-image {
   z-index: 1; }
 
 .cart-btn,
@@ -39,6 +38,17 @@ select:focus {
 
 .blur {
   filter: blur(1.8px); }
+
+.swiper {
+  width: 100%;
+  height: 65vh; }
+  .swiper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #f2f0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 @media (max-width: 769px) {
   .nav .nav-contact .nav-contact-wrap {
@@ -57,27 +67,27 @@ select:focus {
       font-size: 20px; }
     .nav .nav-links .nav-links-wrap .nav-lists {
       display: none; }
-  .collectionCard {
-    height: 80vh; }
-    .collectionCard .carouel-add-img {
+  .collection-card {
+    height: 100%; }
+    .collection-card .carouel-add-img {
       width: 80px; }
-    .collectionCard .collection-wrap {
-      height: 80vh;
+    .collection-card .collection-wrap {
+      height: 100%;
       width: 100%;
       flex-direction: column-reverse; }
-      .collectionCard .collection-wrap .collection-details {
+      .collection-card .collection-wrap .collection-details {
         padding: 20px 10px; }
-        .collectionCard .collection-wrap .collection-details h1 {
+        .collection-card .collection-wrap .collection-details h1 {
           font-size: 20px;
           line-height: 25px; }
-        .collectionCard .collection-wrap .collection-details .collection-decription {
+        .collection-card .collection-wrap .collection-details .collection-decription {
           margin: 10px 0px; }
-      .collectionCard .collection-wrap .collection-image-wrap {
+      .collection-card .collection-wrap .collection-image-wrap {
         width: 100%;
         height: 50%; }
-        .collectionCard .collection-wrap .collection-image-wrap .collection-image img {
+        .collection-card .collection-wrap .collection-image-wrap .collection-image img {
           width: 270px; }
-        .collectionCard .collection-wrap .collection-image-wrap .colection-bolb {
+        .collection-card .collection-wrap .collection-image-wrap .colection-bolb {
           width: 220px;
           height: 220px; }
   .search {
