@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="/assets/chair-product.svg"
+      type="image/x-icon"
+    />
+    <title>Cart</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <div id="nav"></div>
+
+    <div class="mt-[125px] text-3xl text-pink">
+      <div
+        class="w-full h-[230px] bg-[#F6F5FF] flex items-center justify-center"
+      >
+        <div class="lg:w-[70%] mx-auto">
+          <h1 class="lg:text-4xl text-[#101750]">Cart</h1>
+          <p class="mt-2 text-[#101750]">
+            Home / <span class="text-pink">Cart</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section
+      class="cartSection lg:w-[70%] mx-auto lg:mt-32 mt-10 my-20 lg:flex gap-10"
+    >
+      <div class="lg:w-2/3 left">
+        <div class="flex items-center lg:mb-8 lg:px-0 px-3">
+          <div
+            class="product-side w-2/5 lg:text-lg text-xs text-[#101750] font-bold"
+          >
+            Products
+          </div>
+
+          <div
+            class="price-side w-3/5 flex item-center justify-between text-start"
+          >
+            <div class="w-1/3 lg:text-lg text-xs text-[#101750] font-bold">
+              Price
+            </div>
+            <div class="w-1/3 lg:text-lg text-xs text-[#101750] font-bold">
+              Quantity
+            </div>
+            <div class="w-1/3 lg:text-lg text-xs text-[#101750] font-bold">
+              Total
+            </div>
+          </div>
+        </div>
+
+        <!-- loties -->
+        <div>
+          <lottie-player
+            src="https://lottie.host/858f6b36-625b-4079-b999-2851113212f5/8roAgjjFXT.json"
+            background="transparent"
+            speed="1"
+            style="width: 500px; margin: auto; height: 300px"
+            loop
+            autoplay
+            class=""
+          ></lottie-player>
+
+          <p class="text-center text-2xl">
+            You haven't added any product to Cart yet, kindly proceed to
+            <a href="./index.html" class="text-pink font-bold"> Home </a>
+            and select products
+          </p>
+        </div>
+
+        <div
+          class="cart-btns flex items-center justify-between mt-10 lg:mx-0 mx-3"
+        >
+          <button class="px-8 py-3 bg-pink text-mainWhite lg:text-base text-xs">
+            Update Cart
+          </button>
+          <button class="px-8 py-3 bg-pink text-mainWhite lg:text-base text-xs">
+            Clear Cart
+          </button>
+        </div>
+      </div>
+
+      <div class="lg:w-1/3 lg:mt-0 mt-10">
+        <div class="cart-totals lg:px-0 px-3">
+          <h1 class="text-center lg:text-xl text-[#101750] font-bold">
+            Cart Totals
+          </h1>
+
+          <div class="items-total p-5 mt-10 bg-[#F4F4FC]">
+            <div
+              class="flex items-center justify-between py-5 border-b-2 border-[#E8E6F1]"
+            >
+              <p class="lg:text-lg text-[#101750] text-bold">
+                Item's total: <span class="total-items">(0)</span>
+              </p>
+              <p class="lg:text-lg text-[#101750] text-bold">$<span></span></p>
+            </div>
+
+            <div
+              class="flex items-center justify-between py-5 border-b-2 border-[#E8E6F1]"
+            >
+              <p class="lg:text-lg text-[#101750] text-bold">Fees(2%):</p>
+              <p class="lg:text-lg text-[#101750] text-bold">$<span></span></p>
+            </div>
+
+            <div
+              class="flex items-center justify-between py-5 border-b-2 border-[#E8E6F1]"
+            >
+              <p class="lg:text-lg text-[#101750] text-bold">Total:</p>
+              <p class="lg:text-lg text-[#101750] text-bold">$<span></span></p>
+            </div>
+
+            <button
+              class="px-8 py-3 bg-[#19D16F] checkoutBtn w-full mt-10 mb-5 text-mainWhite"
+            >
+              Proceed To Checkout
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+  </body>
+
+  <script src="script.js"></script>
+
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <script
+    src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    $("#nav").load("nav.html");
+    $("#footer").load("footer.html");
+  </script>
+</html>

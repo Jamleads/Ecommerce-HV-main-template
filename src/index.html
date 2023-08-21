@@ -18,131 +18,7 @@
   </head>
 
   <body>
-    <nav class="nav w-full fixed top-0 left-0 right-0">
-      <div class="nav-contact w-full bg-purpple py-2">
-        <div
-          class="nav-contact-wrap lg:w-[70%] mx-auto flex items-center justify-between"
-        >
-          <div class="lg:flex items-center gap-3">
-            <a
-              href="mailto:ogunyemiadetunji17@gmail.com?subject=Frontend Development"
-              target="_blank"
-            >
-              <div class="email flex items-center">
-                <img src="/assets/email-icon.svg" alt="email-icon" />
-                <p class="ml-2 text-base text-offWhite">
-                  ogunyemiaetunji17@gmail.com
-                </p>
-              </div>
-            </a>
-
-            <a href="tel:+2349067942127" target="_blank">
-              <div class="phone flex items-center">
-                <img src="/assets/phone-icon.svg" alt="phone-icon" />
-                <p class="ml-2 text-base text-offWhite">(+234) 9067942127</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="lg:flex items-center gap-3">
-            <div class="languages-wrap">
-              <select
-                name="languages"
-                id="langueges"
-                class="bg-transparent text-offWhite text-base"
-              >
-                <option value="eng">English</option>
-              </select>
-            </div>
-
-            <div class="currency-wrap">
-              <select
-                name="currency"
-                id="currency"
-                class="bg-transparent text-offWhite text-base"
-              >
-                <option value="usd">USD</option>
-              </select>
-            </div>
-
-            <a href="./wishlist.html">
-              <div class="favourites flex items-center">
-                <p class="text-offWhite text-base">Wishlist</p>
-                <img
-                  src="/assets/favourite-icon.svg"
-                  alt="favourites-Icon"
-                  class="lg:ml-2"
-                />
-              </div>
-            </a>
-
-            <div class="cart-wrap flex items-center">
-              <p class="text-offWhite text-base">Cart</p>
-              <div
-                class="relative h-full w-[30px] flex items-center justify-center"
-              >
-                <p
-                  class="absolute -top-2 right-0 px-1 ml-2 text-pink text-xs bg-[#2F1AC4] font-bold"
-                >
-                  <!-- {!cartProducts.length >= 1 ? "" : cartProducts.length} -->
-                </p>
-                <img src="/assets/cart-icon.svg" alt="cart-icon" class="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="nav-links w-full bg-mainWhite py-5">
-        <div
-          class="nav-links-wrap lg:w-[70%] w-[100%] mx-auto flex items-center lg:justify-between"
-        >
-          <div class="flex items-center">
-            <a href="">
-              <h1 class="brand-name font-bold text-3xl text-[#0D0E43]">
-                Hekto
-              </h1>
-            </a>
-
-            <ul class="nav-lists flex items-center gap-5 ml-20 text-{#0D0E43}">
-              <li>
-                <a href="">Home</a>
-              </li>
-              <li>
-                <a href="">Pages</a>
-              </li>
-              <li>
-                <a href="">Product</a>
-              </li>
-              <li>
-                <a href="">Blog</a>
-              </li>
-              <li>
-                <a href="">Shop</a>
-              </li>
-              <li>
-                <a href="">Contact</a>
-              </li>
-            </ul>
-          </div>
-
-          <div
-            class="search flex items-center justify-between border-[1px] border-[#E7E6EF]"
-          >
-            <input
-              type="text"
-              placeholder=""
-              class="bg-transparent py-2 lg:w-[250px] lg:px-5"
-            />
-            <div
-              class="w-[40px] h-[40px] bg-pink flex items-center justify-center"
-            >
-              <img src="/assets/search-icon.svg" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
+    <div id="nav"></div>
 
     <section class="swiper-section mt-[125px]">
       <div class="swiper mySwiper">
@@ -841,135 +717,7 @@
       </div>
     </section>
 
-    <div>
-      <div class="footer-top bg-[#EEEFFB]">
-        <div class="footer-top-wrap lg:w-[70%] mx-auto lg:py-20 flex justify-between">
-          <div class="text-center">
-            <Link to="/">
-              <h1 class="brand-name font-bold text-3xl text-[#000000]">
-                Hekto
-              </h1>
-            </Link>
-            <div class="w-full bg-[#ffffff] my-3 flex items-center">
-              <input type="text" class="w-[70%] py-2 px-5" />
-
-              <button class="px-8 py-3 bg-pink text-mainWhite text-xs">Sign Up</button>
-
-            </div>
-            <div class="">
-              <p class="text-[#8A8FB9] text-sm">Contact Address</p>
-              <p class="text-[#8A8FB9] text-sm">
-                17 Princess Road, London, Greater London NW1 8JR, UK
-              </p>
-            </div>
-          </div>
-
-          <div class="text-center footer-links-wrap">
-            <p class="text-[#000000] text-xl font-bold">Catagories</p>
-            <ul class="mt-5">
-              <a href="#">
-                <li class="text-[#8A8FB9] text-sm">Laptops & Computers</li>
-              </a>
-              <a href="#">
-                <li class="text-[#8A8FB9] text-sm mt-2">
-                  Cameras & Photography
-                </li>
-              </a>
-              <a href="#">
-                <li class="text-[#8A8FB9] text-sm mt-2">
-                  Smart Phones & Tablets
-                </li>
-              </a>
-              <a href="#">
-                <li class="text-[#8A8FB9] text-sm mt-2">
-                  Video Games & Consoles
-                </li>
-              </a>
-              <a href="#">
-                <li class="text-[#8A8FB9] text-sm mt-2">
-                  Waterproof Headphones
-                </li>
-              </a>
-            </ul>
-          </div>
-
-          <div class="text-center footer-links-wrap">
-            <p class="text-[#000000] text-xl font-bold">Customer Care</p>
-            <ul class="mt-5">
-              <a href="#">
-                <li class="text-[#8A8FB9] text-sm">My Account</li>
-              </a>
-              <a href="#">
-                <li class="text-[#8A8FB9] text-sm mt-2">Discount</li>
-              </a>
-              <a href="#">
-                <li class="text-[#8A8FB9] text-sm mt-2">Returns</li>
-              </a>
-              <a href="#">
-                <li class="text-[#8A8FB9] text-sm mt-2">Orders History</li>
-              </a>
-              <a href="#">
-                <li class="text-[#8A8FB9] text-sm mt-2">Order Tracking</li>
-              </a>
-            </ul>
-          </div>
-
-          <div class="text-center footer-links-wrap">
-            <p class="text-[#000000] text-xl font-bold">Pages</p>
-            <ul class="mt-5">
-              <a href="#">
-                <li class="text-[#8A8FB9] text-sm">Blog</li>
-              </a>
-              <a href="#">
-                <li class="text-[#8A8FB9] text-sm mt-2">Browse the Shop</li>
-              </a>
-              <a href="#">
-                <li class="text-[#8A8FB9] text-sm mt-2">Category</li>
-              </a>
-              <a href="#">
-                <li class="text-[#8A8FB9] text-sm mt-2">Pre-Built Pages</li>
-              </a>
-              <a href="#">
-                <li class="text-[#8A8FB9] text-sm mt-2">
-                  Visual Composer Elements
-                </li>
-              </a>
-              <a href="#">
-                <li class="text-[#8A8FB9] text-sm mt-2">
-                  WooCommerce Pages
-                </li>
-              </a>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <footer class="footer-bottom bg-[#E7E4F8]">
-        <div class="footer-button-wrap flex items-center justify-between py-2 lg:w-[60%] mx-auto">
-          <p class="text-[#8A8FB9] text-sm">
-            &copy;<a href="https://jamleads.netlify.app/">Jamleads</a> - All
-            Rights Reserved
-          </p>
-          <div class="flex items-center gap-3 rounded-full">
-            <div class="git bg-[#151875] w-[25px] h-[25px] flex items-center justify-center rounded-full">
-              <a href="#">
-                <img src="../assets/Github.svg"alt="" />
-              </a>
-            </div>
-            <div class="linkedin bg-[#151875] w-[25px] h-[25px] flex items-center justify-center rounded-full">
-              <a href="#">
-                <img src="../assets/Linkedin.svg" alt="" />
-              </a>
-            </div>
-            <div class="twitter bg-[#151875] w-[25px] h-[25px] flex items-center justify-center rounded-full">
-              <a href="#">
-                <img src="../assets/Twitter.svg" alt="" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
+    <div id="footer"></div>
   </body>
 
   <!-- Main project script -->
@@ -977,9 +725,16 @@
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
+  <script
+    src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+    crossorigin="anonymous"
+  ></script>
   <script>
+    $("#nav").load("nav.html");
+    $("#footer").load("footer.html");
+
+    <!-- Initialize Swiper -->
     var swiper = new Swiper(".mySwiper", {
       navigation: {
         nextEl: ".swiper-button-next",
